@@ -1,0 +1,86 @@
+body {
+    background-color: #fff0f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.mood-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.mood-btn {
+    padding: 20px 10px;
+    border: 2px solid #ff4d6d;
+    background: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.mood-btn:hover {
+    background: #ff4d6d;
+    color: white;
+}
+
+.hidden { display: none; }
+
+/* Estilos para la Foto */
+.photo-frame {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+#mood-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Evita que la foto se estire */
+    border-radius: 50%; /* Foto circular, cámbialo a 15px si prefieres cuadrada */
+    border: 4px solid #ff4d6d;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#response-text {
+    font-style: italic;
+    color: #444;
+    margin: 15px 0;
+}
+
+.visual-indicator {
+    color: #ff4d6d;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.back-btn {
+    margin-top: 10px;
+    background: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}

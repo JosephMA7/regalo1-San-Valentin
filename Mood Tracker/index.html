@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi niña hermosa ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Hola, mi amor ❤️</h1>
+        <p id="instruction">¿Cómo te sientes en este momento?</p>
+        
+        <div class="mood-options">
+            <button class="mood-btn" data-mood="feliz">😊 Feliz</button>
+            <button class="mood-btn" data-mood="cansada">😴 Cansada</button>
+            <button class="mood-btn" data-mood="triste">😔 Triste</button>
+            <button class="mood-btn" data-mood="enojada">😤 Enojada</button>
+        </div>
+
+        <div id="message-container" class="hidden">
+            <div class="visual-indicator">🔊 Reproduciendo tu audio...</div>
+            
+            <div class="photo-frame">
+                <img id="mood-photo" src="" alt="Nuestro momento">
+            </div>
+
+            <p id="response-text"></p>
+            <button onclick="reset()" class="back-btn">Volver a elegir</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
